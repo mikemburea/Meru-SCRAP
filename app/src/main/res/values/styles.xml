@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
+<resources>
+    <!-- Bottom Navigation Text Appearance -->
+    <style name="BottomNavigationTextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Add your splash screen styling here -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!-- Responsive Card Style -->
+    <style name="ResponsiveCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="android:layout_margin">@dimen/micro_margin</item>
+        <item name="cardBackgroundColor">#F8FFFFFF</item>
+    </style>
+
+    <!-- Responsive Text Styles -->
+    <style name="ResponsiveTitleText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">#1a1a2e</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ResponsiveSubtitleText" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">#546E7A</item>
+    </style>
+
+    <style name="ResponsiveBodyText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">#546E7A</item>
+    </style>
+
+    <style name="ResponsiveCaptionText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="android:textColor">#546E7A</item>
+    </style>
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@fonts/casanova.ttf</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- Stats Value Text Style -->
+    <style name="StatsValueText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/stats_value_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Action Button Text Style -->
+    <style name="ActionButtonText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/action_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <!-- Custom Dialog Theme - Option 1: Material Design -->
+    <style name="CustomTransactionDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- Custom Dialog Theme - Option 2: Material Components (if you have Material Components) -->
+    <style name="MaterialTransactionDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="materialAlertDialogTheme">@style/CustomAlertDialogStyle</item>
+    </style>
+
+    <!-- Custom Alert Dialog Style -->
+    <style name="CustomAlertDialogStyle" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.Dialog</item>
+        <item name="backgroundTint">@android:color/white</item>
+    </style>
+
+    <!-- Dialog Shape Appearance -->
+    <style name="ShapeAppearance.Dialog" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Dialog Animation -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_out</item>
+    </style>
+
+    <!-- Button Styles for Dialog -->
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+
+    <style name="SimpleDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+</resources>

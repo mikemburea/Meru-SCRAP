@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Balanced spacing dimensions -->
+    <dimen name="micro_margin">6dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="standard_margin">10dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <!-- Card dimensions -->
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="small_elevation">6dp</dimen>
+    <dimen name="card_corner_radius">18dp</dimen>
+    <dimen name="large_corner_radius">24dp</dimen>
+
+    <!-- Header section -->
+    <dimen name="logo_size">62dp</dimen>
+    <dimen name="logo_corner_radius">31dp</dimen>
+    <dimen name="logo_elevation">14dp</dimen>
+    <dimen name="logo_icon_size">36dp</dimen>
+
+    <!-- Stats section -->
+    <dimen name="stats_card_height">115dp</dimen>
+    <dimen name="stats_icon_container_size">34dp</dimen>
+    <dimen name="stats_icon_corner_radius">17dp</dimen>
+    <dimen name="stats_icon_size">20dp</dimen>
+
+    <!-- Action buttons -->
+    <dimen name="action_button_height">160dp</dimen>
+    <dimen name="action_icon_container_size">38dp</dimen>
+    <dimen name="action_icon_corner_radius">19dp</dimen>
+    <dimen name="action_icon_size">26dp</dimen>
+
+    <!-- Icon dimensions -->
+    <dimen name="small_icon_size">16dp</dimen>
+    <dimen name="material_icon_size">32dp</dimen>
+    <dimen name="selection_indicator_size">20dp</dimen>
+
+    <!-- Text sizes - readable but not huge -->
+    <dimen name="title_text_size">21sp</dimen>
+    <dimen name="section_title_text_size">17sp</dimen>
+    <dimen name="subtitle_text_size">14sp</dimen>
+    <dimen name="date_text_size">16sp</dimen>
+    <dimen name="body_text_size">13sp</dimen>
+    <dimen name="stats_value_text_size">17sp</dimen>
+    <dimen name="action_text_size">11sp</dimen>
+    <dimen name="caption_text_size">12sp</dimen>
+    <dimen name="micro_text_size">10sp</dimen>
+
+    <!-- Material card dimensions -->
+    <dimen name="material_card_height">90dp</dimen>
+    <dimen name="material_card_margin">4dp</dimen>
+    <dimen name="material_name_text_size">13sp</dimen>
+    <dimen name="material_price_text_size">11sp</dimen>
+
+    <!-- Grid spacing -->
+    <dimen name="grid_spacing">8dp</dimen>
+
+    <!-- Button dimensions -->
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+
+    <!-- Legacy dimensions for compatibility -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+</resources>

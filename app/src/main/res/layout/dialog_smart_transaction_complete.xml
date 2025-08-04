@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background"
+    tools:ignore="NamespaceTypo">
+
+    <!-- Transaction Complete Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅"
+            android:textSize="24sp"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Complete"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_transaction_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSh 1,250 saved successfully"
+                android:textSize="14sp"
+                android:textColor="@color/success_green"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Print Status Section -->
+    <LinearLayout
+        android:id="@+id/layout_print_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="@drawable/status_background"
+        android:layout_marginBottom="20dp">
+
+        <!-- Print Status Indicator -->
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="12dp">
+
+            <!-- Spinner (shown during printing) -->
+            <ProgressBar
+                android:id="@+id/progress_spinner"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/primary_orange"
+                android:visibility="gone" />
+
+            <!-- Status Icon (shown for success/failure) -->
+            <TextView
+                android:id="@+id/tv_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="🖨️"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/tv_print_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ready to print receipt"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Cancel Button (shown during printing after timeout) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel_print"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Cancel"
+            android:textSize="12sp"
+            android:backgroundTint="@color/warning"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button.TextButton" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:id="@+id/layout_action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Print Receipt Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_print_receipt"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🖨️ Print Receipt"
+            android:textSize="14sp"
+            android:backgroundTint="@color/primary_orange"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.Material3.Button" />
+
+        <!-- Print Later Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_print_later"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Print Later"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+    <!-- Secondary Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+
+        <!-- View Receipt Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_view_receipt"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="View Receipt"
+            android:textSize="13sp"
+            android:layout_marginEnd="4dp"
+            style="@style/Widget.Material3.Button.TextButton" />
+
+        <!-- Continue Button (shown after success) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="Continue"
+            android:textSize="13sp"
+            android:backgroundTint="@color/success_green"
+            android:layout_marginStart="4dp"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button" />
+
+    </LinearLayout>
+
+    <!-- Retry Actions (shown on failure) -->
+    <LinearLayout
+        android:id="@+id/layout_retry_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <!-- Retry Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_retry_print"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="🔄 Retry"
+            android:textSize="13sp"
+            android:backgroundTint="@color/secondary_blue"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.Material3.Button" />
+
+        <!-- Done Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="Done"
+            android:textSize="13sp"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+    <!-- Retry Counter (shown during retries) -->
+    <TextView
+        android:id="@+id/tv_retry_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Retry attempt 1 of 2"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

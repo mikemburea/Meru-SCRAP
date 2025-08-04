@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Bluetooth Symbol (faded) -->
+    <path
+        android:fillColor="#FF666666"
+        android:pathData="M17.71,7.71 L12,2 L11,2 L11,9.59 L6.41,5 L5,6.41 L10.59,12 L5,17.59 L6.41,19 L11,14.41 L11,22 L12,22 L17.71,16.29 L13.41,12 L17.71,7.71 Z M13,5.83 L15.17,8 L13,10.17 L13,5.83 Z M13,13.83 L15.17,16 L13,18.17 L13,13.83 Z"
+        android:alpha="0.4"/>
+
+    <!-- Disconnection X Mark - First Line -->
+    <path
+        android:fillColor="#FFFF5722"
+        android:pathData="M2.5,2.5 L21.5,21.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFF5722" />
+
+    <!-- Disconnection X Mark - Second Line -->
+    <path
+        android:fillColor="#FFFF5722"
+        android:pathData="M21.5,2.5 L2.5,21.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFF5722" />
+
+    <!-- Small disconnect indicators -->
+    <path
+        android:fillColor="#FFFF5722"
+        android:pathData="M5,5 L7,7 L5,9 L3,7 Z"/>
+
+    <path
+        android:fillColor="#FFFF5722"
+        android:pathData="M17,15 L19,17 L17,19 L15,17 Z"/>
+
+</vector>

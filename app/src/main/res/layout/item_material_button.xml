@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="4dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:strokeColor="#047107"
+        app:strokeWidth="1dp"
+        app:checkedIcon="@null"
+        app:cardBackgroundColor="@color/card_elevated">
+
+        <!-- Main Content with Horizontal Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:gravity="center_vertical">
+
+            <!-- Emoji Section (Left Side) -->
+            <TextView
+                android:id="@+id/tv_material_icon"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="🔩"
+                android:gravity="center"
+                android:layout_marginEnd="4dp" />
+
+            <!-- Text Container (Right Side) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <!-- Material Name -->
+                <TextView
+                    android:id="@+id/tv_material_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Material Name"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_primary"
+                    android:gravity="start|center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="1dp" />
+
+                <!-- Material Price -->
+                <TextView
+                    android:id="@+id/tv_material_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KSH 0/kg"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success"
+                    android:gravity="start|center_vertical"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Selection Indicator (Checkmark) -->
+        <ImageView
+            android:id="@+id/iv_selected_indicator"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_check_circle"
+            android:visibility="gone"
+            app:tint="@color/primary" />
+
+        <!-- Disabled Overlay -->
+        <FrameLayout
+            android:id="@+id/material_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80E0E0E0"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Already\nAdded"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center"
+                android:alpha="0.8" />
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

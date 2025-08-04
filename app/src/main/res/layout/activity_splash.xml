@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient_bg"
+    android:fitsSystemWindows="true">
+
+    <!-- Background overlay for better contrast -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A000000" />
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Logo container with logo taking 2/3 of the space -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logoCard"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#FAD0C3">
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="Meru Scrap Metal Market Logo"
+            android:src="@drawable/ic_scrap_logo"
+            android:scaleType="fitCenter"
+            app:tint="#FF6B35" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Company name with modern typography -->
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="MERU SCRAP"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/companySubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="METAL MARKET"
+            android:textColor="#E0FFFFFF"
+            android:textSize="16sp"
+            android:letterSpacing="0.15"
+            android:alpha="0" />
+
+        <!-- POS System indicator -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/posCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#33FFFFFF"
+            android:alpha="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Point of Sale System"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_medium" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Loading indicator -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:alpha="0"
+            android:id="@+id/loadingContainer">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_marginEnd="16dp"
+                android:progressTint="#FF6B35"
+                android:progressBackgroundTint="#33FFFFFF"
+                android:progress="0"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/loadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:textColor="#CCFFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom branding -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:alpha="0"
+        android:id="@+id/bottomBranding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by Nesis"
+            android:textColor="#99FFFFFF"
+            android:textSize="11sp"
+            android:fontFamily="@font/roboto_regular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Version 1.0"
+            android:textColor="#66FFFFFF"
+            android:textSize="10sp"
+            android:fontFamily="@font/roboto_regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

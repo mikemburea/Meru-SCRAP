@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Scale Base -->
+    <path
+        android:fillColor="#FFFF6F00"
+        android:pathData="M2,19 h20 c0.55,0 1,0.45 1,1 s-0.45,1 -1,1 H2 c-0.55,0 -1,-0.45 -1,-1 s0.45,-1 1,-1 Z" />
+
+    <!-- Scale Platform -->
+    <path
+        android:fillColor="#FFFF8F00"
+        android:pathData="M4,14 h16 c0.55,0 1,0.45 1,1 v2 c0,0.55 -0.45,1 -1,1 H4 c-0.55,0 -1,-0.45 -1,-1 v-2 c0,-0.55 0.45,-1 1,-1 Z" />
+
+    <!-- Scale Body -->
+    <path
+        android:fillColor="#FFFFA726"
+        android:pathData="M8,11 h8 v3 H8 Z" />
+
+    <!-- Digital Display -->
+    <path
+        android:fillColor="#FFFF8F00"
+        android:pathData="M6,8 h12 c0.55,0 1,0.45 1,1 v2 c0,0.55 -0.45,1 -1,1 H6 c-0.55,0 -1,-0.45 -1,-1 V9 c0,-0.55 0.45,-1 1,-1 Z" />
+
+    <!-- Display Screen -->
+    <path
+        android:fillColor="#FFFFC107"
+        android:pathData="M7,9 h10 v2 H7 Z" />
+
+    <!-- Weight Display -->
+    <path
+        android:fillColor="#FFBF360C"
+        android:pathData="M8,9.5 h1 v1 H8 Z M10,9.5 h1 v1 h-1 Z M12,9.5 h1 v1 h-1 Z" />
+
+    <!-- Scale Support -->
+    <path
+        android:fillColor="#FFFF6F00"
+        android:pathData="M10,17 h4 v2 h-4 Z" />
+
+</vector>

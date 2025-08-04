@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Small screen balanced -->
+    <dimen name="micro_margin">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="standard_margin">14dp</dimen>
+    <dimen name="large_margin">18dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+
+    <dimen name="logo_size">56dp</dimen>
+    <dimen name="stats_card_height">105dp</dimen>
+    <dimen name="action_button_height">90dp</dimen>
+
+    <dimen name="title_text_size">19sp</dimen>
+    <dimen name="stats_value_text_size">16sp</dimen>
+    <dimen name="action_text_size">10sp</dimen>
+</resources>

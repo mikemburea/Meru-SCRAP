@@ -1,0 +1,226 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Printer Connection Settings -->
+    <PreferenceCategory
+        android:title="Printer Connection"
+        android:icon="@drawable/ic_bluetooth">
+
+        <Preference
+            android:key="saved_printer"
+            android:title="Saved Printer"
+            android:summary="No printer saved"
+            android:icon="@drawable/ic_printer_generic" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_connect"
+            android:title="Auto Connect"
+            android:summary="Automatically connect to saved printer when available"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_auto_connect" />
+
+        <SeekBarPreference
+            android:key="connection_timeout"
+            android:title="Connection Timeout"
+            android:summary="How long to wait when connecting to printer"
+            android:defaultValue="30"
+            android:max="60"
+            android:min="10"
+            app:showSeekBarValue="true"
+            app:seekBarIncrement="5"
+            android:icon="@drawable/ic_timer" />
+
+        <Preference
+            android:key="run_diagnostic"
+            android:title="Run Diagnostic"
+            android:summary="Test printer connectivity and status"
+            android:icon="@drawable/ic_diagnostic" />
+
+    </PreferenceCategory>
+
+    <!-- Print Settings -->
+    <PreferenceCategory
+        android:title="Print Settings"
+        android:icon="@drawable/ic_print_settings">
+
+        <SwitchPreferenceCompat
+            android:key="print_header"
+            android:title="Print Header"
+            android:summary="Include business information in receipts"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_header" />
+
+        <SwitchPreferenceCompat
+            android:key="print_footer"
+            android:title="Print Footer"
+            android:summary="Include thank you message and timestamp"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_footer" />
+
+        <SwitchPreferenceCompat
+            android:key="print_qr_code"
+            android:title="Print QR Code"
+            android:summary="Include QR code for digital receipt access"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_qr_code" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_cut"
+            android:title="Auto Cut Paper"
+            android:summary="Automatically cut paper after printing"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_cut" />
+
+        <SwitchPreferenceCompat
+            android:key="drawer_kick"
+            android:title="Open Cash Drawer"
+            android:summary="Open cash drawer when printing receipts"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_drawer" />
+
+        <SeekBarPreference
+            android:key="print_retries"
+            android:title="Print Retries"
+            android:summary="Number of times to retry failed print jobs"
+            android:defaultValue="3"
+            android:max="5"
+            android:min="1"
+            app:showSeekBarValue="true"
+            android:icon="@drawable/ic_retry" />
+
+    </PreferenceCategory>
+
+    <!-- Receipt Formatting -->
+    <PreferenceCategory
+        android:title="Receipt Formatting"
+        android:icon="@drawable/ic_format">
+
+        <SeekBarPreference
+            android:key="receipt_width"
+            android:title="Receipt Width"
+            android:summary="Number of characters per line"
+            android:defaultValue="32"
+            android:max="48"
+            android:min="24"
+            app:showSeekBarValue="true"
+            app:seekBarIncrement="4"
+            android:icon="@drawable/ic_width" />
+
+        <ListPreference
+            android:key="font_size"
+            android:title="Font Size"
+            android:summary="Text size for printed receipts"
+            android:entries="@array/font_size_entries"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="NORMAL"
+            android:icon="@drawable/ic_font_size" />
+
+    </PreferenceCategory>
+
+    <!-- Business Information -->
+    <PreferenceCategory
+        android:title="Business Information"
+        android:icon="@drawable/ic_business">
+
+        <EditTextPreference
+            android:key="business_name"
+            android:title="Business Name"
+            android:summary="Your business name for receipts"
+            android:defaultValue="Meru Scrap Metal Market"
+            android:icon="@drawable/ic_business_name" />
+
+        <EditTextPreference
+            android:key="business_address"
+            android:title="Business Address"
+            android:summary="Your business address for receipts"
+            android:defaultValue="Meru County, Kenya"
+            android:icon="@drawable/ic_location" />
+
+        <EditTextPreference
+            android:key="business_phone"
+            android:title="Business Phone"
+            android:summary="Your contact phone number"
+            android:defaultValue="+254 XXX XXX XXX"
+            android:inputType="phone"
+            android:icon="@drawable/ic_phone" />
+
+    </PreferenceCategory>
+
+    <!-- Testing & Maintenance -->
+    <PreferenceCategory
+        android:title="Testing &amp; Maintenance"
+        android:icon="@drawable/ic_tools">
+
+        <Preference
+            android:key="test_print"
+            android:title="Test Print"
+            android:summary="Print a test page to verify printer functionality"
+            android:icon="@drawable/ic_test_print" />
+
+        <Preference
+            android:key="print_history"
+            android:title="Print History"
+            android:summary="View recent print jobs and statistics"
+            android:icon="@drawable/ic_history" />
+
+        <Preference
+            android:key="clear_history"
+            android:title="Clear History"
+            android:summary="Remove all print history records"
+            android:icon="@drawable/ic_clear_history" />
+
+    </PreferenceCategory>
+
+    <!-- Advanced Settings -->
+    <PreferenceCategory
+        android:title="Advanced Settings"
+        android:icon="@drawable/ic_advanced">
+
+        <SwitchPreferenceCompat
+            android:key="debug_printing"
+            android:title="Debug Mode"
+            android:summary="Enable detailed logging for troubleshooting"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_debug" />
+
+        <Preference
+            android:key="export_settings"
+            android:title="Export Settings"
+            android:summary="Save current settings to file"
+            android:icon="@drawable/ic_export" />
+
+        <Preference
+            android:key="import_settings"
+            android:title="Import Settings"
+            android:summary="Load settings from file"
+            android:icon="@drawable/ic_import" />
+
+        <Preference
+            android:key="reset_settings"
+            android:title="Reset to Defaults"
+            android:summary="Restore all settings to default values"
+            android:icon="@drawable/ic_reset" />
+        <!-- Add this in the printer connection section -->
+        <Preference
+            android:key="print_queue_status"
+            android:title="Print Queue Status"
+            android:summary="No printer connected"
+            android:icon="@drawable/ic_print_queue" />
+
+        <!-- You can also add a preference to auto-connect -->
+        <Preference
+            android:key="auto_connect_saved"
+            android:title="Auto Connect to Saved Printer"
+            android:summary="Attempt to connect to the last used printer"
+            android:icon="@drawable/ic_autorenew" />
+
+        <!-- And a preference to clear the queue -->
+        <Preference
+            android:key="clear_print_queue"
+            android:title="Clear Print Queue"
+            android:summary="Remove all pending print jobs"
+            android:icon="@drawable/ic_clear_all" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

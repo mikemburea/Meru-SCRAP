@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary_orange">#FF6B35</color>
+    <color name="primary_orange_dark">#E55A2B</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary_blue">#1976D2</color>
+    <color name="secondary_blue_dark">#1565C0</color>
+
+    <!-- Success/Green Colors -->
+    <color name="success_green">#27AE60</color>
+    <color name="success_green_light">#E8F5E8</color>
+    <!-- Warning orange for connecting state -->
+    <color name="warning">#FF9800</color>
+    <color name="warning_light">#FFF3E0</color>
+    <color name="primary">#2196F3</color>
+    <color name="success">#4CAF50</color>
+
+    <color name="error">#F44336</color>
+
+    <color name="button_ripple">#20000000</color>
+    <color name="dialog_scrim">#80000000</color>
+    <color name="background_light">#FAFAFA</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="material_grey_50">#FAFAFA</color>
+
+
+    <!-- Success green for connected state -->
+
+    <color name="success_light">#E8F5E9</color>
+    <!-- Background Colors -->
+    <color name="background_dark">#1a1a2e</color>
+    <color name="background_medium">#16213e</color>
+
+    <!-- ADD THESE GRADIENT COLORS -->
+    <color name="gradient_start">#1a1a2e</color>
+    <color name="gradient_center">#16213e</color>
+    <color name="gradient_end">#0f3460</color>
+
+    <!-- Status bar color using gradient center -->
+    <color name="status_bar_color">@color/gradient_center</color>
+    <!-- Text Colors -->
+    <color name="text_disabled">#757575</color>
+
+    <!-- Card Background Colors -->
+    <color name="card_green_bg">#E8F5E8</color>
+    <color name="card_blue_bg">#E3F2FD</color>
+    <color name="card_orange_bg">#FFF3E0</color>
+    <color name="card_purple_bg">#F3E5F5</color>
+    <color name="card_yellow_bg">#FFF8E1</color>
+    <color name="card_bluetooth_bg">#E8F0FF</color>
+
+
+
+    <!-- Status Indicator Colors -->
+    <color name="status_indicator_disconnected">#757575</color>
+    <color name="status_indicator_connecting">#FF9800</color>
+    <color name="status_indicator_connected">#4CAF50</color>
+    <color name="status_indicator_error">#F44336</color>
+
+
+
+    <!-- Security and license status colors -->
+    <color name="license_valid">#4CAF50</color>
+    <color name="license_warning">#FF9800</color>
+    <color name="license_expired">#F44336</color>
+    <color name="security_ok">#4CAF50</color>
+    <color name="security_warning">#FF9800</color>
+    <color name="security_error">#F44336</color>
+
+
+
+    <!-- Primary Colors -->
+
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+
+    <!-- Status Colors -->
+
+    <color name="error_light">#FFEBEE</color>
+
+
+
+    <!-- Background Colors -->
+
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_grey">#F5F5F5</color>
+
+    <!-- Divider and Border Colors -->
+    <color name="surface">#FFFFFF</color>
+    <color name="border_light">#EEEEEE</color>
+
+    <!-- Material Design Grey Colors -->
+
+    <color name="material_grey_100">#F5F5F5</color>
+    <color name="material_grey_200">#EEEEEE</color>
+    <color name="material_grey_300">#E0E0E0</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+
+    <!-- Card Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_elevated">#FAFAFA</color>
+
+
+
+
+
+    <!-- Printer FAB Background Colors -->
+    <color name="fab_printer_background_disconnected">#757575</color>
+    <color name="fab_printer_background_connecting">#FF9800</color>
+    <color name="fab_printer_background_connected">#4CAF50</color>
+    <color name="fab_printer_background_error">#F44336</color>
+    <color name="fab_printer_background_warning">#FF7043</color>
+
+    <!-- Status Colors -->
+    <color name="status_paired">#4CAF50</color>
+    <color name="status_pairing">#FF9800</color>
+    <color name="status_available">#2196F3</color>
+
+    <!-- Card and UI Colors -->
+    <color name="ripple_color">#12000000</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="icon_background">#F5F5F5</color>
+    <color name="icon_tint">#757575</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+
+    <!-- Signal Strength Colors -->
+    <color name="signal_bar_active">#4CAF50</color>
+    <color name="signal_bar_inactive">#E0E0E0</color>
+
+    <!-- Info Card Colors -->
+    <color name="info_background">#E8F5E8</color>
+    <color name="info_border">#C8E6C9</color>
+    <color name="info_icon">#388E3C</color>
+    <color name="info_text">#2E7D32</color>
+
+    <!-- Primary Colors -->
+    <color name="primary_color">#1a1a2e</color>
+
+    <!-- Connection Status Background (if still needed elsewhere) -->
+    <color name="connection_status_background">#FFFFFF</color>
+    <color name="status_text_color">#757575</color>
+
+</resources>
